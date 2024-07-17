@@ -8,29 +8,44 @@ Managing Nix projects and configurations can be complex and time-consuming, ofte
 
 ## Key Dependencies  
 
-### [divnix/hive](https://github.com/divnix/hive)  
-- **Description**: Hive is a framework for Nix that provides a structured way to manage NixOS configurations and deployments.  
-- **Usage**: Flake.GPT replicates the functionality of Hive, offering a familiar framework enhanced with AI-driven capabilities.  
+### Automation/Scripting
 
-### [Wrapper-Manager](https://github.com/viperML/wrapper-manager)  
-- **Description**: A Nix library that simplifies the configuration of applications by creating wrapper scripts without modifying files in the home directory.  
-- **Usage**: Utilized to create and manage wrapper scripts, ensuring that all necessary environment variables and dependencies are set correctly, reducing manual configuration efforts.  
-
-### [Wrappix](https://github.com/zackattackz/wrappix)  
-- **Description**: Extends Nix functionality using a modular system to create extensible wrapper scripts for various applications.  
-- **Usage**: Enhances Nix's capabilities by allowing custom configurations and managing dependencies efficiently through a modular approach.  
-
-### [GPTscript-ai](https://github.com/gptscript-ai/gptscript)  
+#### [GPTscript-ai](https://github.com/gptscript-ai/gptscript)  
 - **Description**: Replaces traditional `.nix` files with `.gpt` files, allowing Nix code logic to be expressed as natural language prompts.  
 - **Usage**: Simplifies the management of Nix projects by enabling natural language prompts to replicate and automate Nix code logic.  
 
-### [Guidance](https://github.com/guidance-ai/guidance)  
+### (Virtual) Environment Management
+
+#### [Wrapper-Manager](https://github.com/viperML/wrapper-manager)  
+- **Description**: A Nix library that simplifies the configuration of applications by creating wrapper scripts without modifying files in the home directory.  
+- **Usage**: Utilized to create and manage wrapper scripts, ensuring that all necessary environment variables and dependencies are set correctly, reducing manual configuration efforts.  
+
+#### [Wrappix](https://github.com/zackattackz/wrappix)  
+- **Description**: Extends Nix functionality using a modular system to create extensible wrapper scripts for various applications.  
+- **Usage**: Enhances Nix's capabilities by allowing custom configurations and managing dependencies efficiently through a modular approach.  
+
+### Prompt/Structured Output
+
+#### [Guidance](https://github.com/guidance-ai/guidance)  
 - **Description**: Provides high-level structured outputs using large language models (LLMs).  
 - **Usage**: Ensures the generation of coherent and structured outputs, facilitating better management and understanding of Nix configurations.  
 
-### [AICI](https://www.microsoft.com/en-us/research/project/aici/)  
+#### [AICI](https://www.microsoft.com/en-us/research/project/aici/)  
 - **Description**: Offers granular control over LLM outputs, including tokenization and fine-grained adjustments.  
-- **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.  
+- **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.
+
+- #### [Instructor](https://github.com/jxnl/instructor)
+- **Description**: A tool for program synthesis that uses natural language to describe programming tasks, generating code snippets based on descriptions.
+- **Usage**: Enhances the capability of Flake.GPT to generate and manage Nix configurations by translating natural language descriptions into executable code.
+
+### Continuous ...Inference(?)
+- Algorithms, frakeworks and other external libraries that extend the functionality and useability of agents post-prompt to task execution. some examples would be -> self-instruct, self-discovery, Chain-of-Thought reasoning
+
+### Multi-agent Frameworks
+- TBC
+
+### Serving/API/Routing
+- TBC
 
 ## Project Structure  
 
