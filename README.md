@@ -33,7 +33,7 @@ Managing Nix projects and configurations can be complex and time-consuming, ofte
 - **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.
 
 ## Project Structure
-
+```tree
 Flake.GPT/
 ├── flake.nix                # Nix flake configuration file
 ├── scripts/
@@ -45,6 +45,7 @@ Flake.GPT/
 │   └── custom_wrappers.nix  # Custom wrapper definitions
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore file
+```
 
 ### Example Usage
 
@@ -86,25 +87,25 @@ Flake.GPT/
    })
   ```
 
-## Getting Started
+## Getting Started  
 
-1. **Clone the Repository**:
+1. **Clone the Repository**:  
 
-   `git clone https://github.com/your-repo/Flake.GPT.git`
-
-
-2. **Run the Main Script**:
-
-   `nix run .#main`
+   `git clone https://github.com/your-repo/Flake.GPT.git`  
 
 
-3. **Customize Wrappers**:
-   Edit the `custom_wrappers.nix` file to define custom wrappers and configurations as needed.
+2. **Run the Main Script**:  
 
-## Contributing
+   `nix run .#main`  
 
-Contributions are welcome! Please open an issue or submit a pull request if you have suggestions for improvements or new features.
 
-## License
+3. **Customize Wrappers**:  
+   Edit the `custom_wrappers.nix` file to define custom wrappers and configurations as needed.  
+
+## Contributing  
+
+Contributions are welcome! Please open an issue or submit a pull request if you have suggestions for improvements or new features.  
+
+## License  
 
 This project is licensed under the MIT License. See the LICENSE file for details.
