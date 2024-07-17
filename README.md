@@ -32,9 +32,9 @@ Managing Nix projects and configurations can be complex and time-consuming, ofte
 - **Description**: Offers granular control over LLM outputs, including tokenization and fine-grained adjustments.
 - **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.
 
-## Project Structure
-````
-```tree
+## Project Structure  
+
+```tree  
 Flake.GPT/
 ├── flake.nix                # Nix flake configuration file
 ├── scripts/
@@ -46,13 +46,13 @@ Flake.GPT/
 │   └── custom_wrappers.nix  # Custom wrapper definitions
 ├── README.md                # Project documentation
 └── .gitignore               # Git ignore file
-```
+```  
 
-### Example Usage
+### Example Usage  
 
-1. **Initialize Nix Environment**:
-   ```nix
-   import gptscript
+1. **Initialize Nix Environment**:  
+   ```nix  
+   import gptscript  
 
    def init_nix_env(project_path):
        gptscript.run("nix-shell", cwd=project_path)
@@ -87,7 +87,7 @@ Flake.GPT/
      }];
    })
   ```
-````
+
 ## Getting Started  
 
 1. **Clone the Repository**:  
