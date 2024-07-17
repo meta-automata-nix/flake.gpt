@@ -1,41 +1,42 @@
-# Flake.GPT
+# Flake.GPT  
 
-Flake.GPT is a tool designed to automate the wrapping and management of Nix projects using advanced AI capabilities. By leveraging various powerful libraries and frameworks, Flake.GPT ensures consistent, reproducible environments while simplifying configuration management through natural language processing.
+Flake.GPT is a tool designed to automate the wrapping and management of Nix projects using advanced AI capabilities. By leveraging various powerful libraries and frameworks, Flake.GPT ensures consistent, reproducible environments while simplifying configuration management through natural language processing.  
 
-## Why Flake.GPT?
+## Why Flake.GPT?  
 
-Managing Nix projects and configurations can be complex and time-consuming, often involving manual setup and maintenance. Flake.GPT addresses these challenges by automating the creation of wrapper scripts, handling environment configurations, and utilizing AI to streamline processes. This project aims to replicate and extend the functionality of the Divnix Hive framework with enhanced flexibility and ease of use.
+Managing Nix projects and configurations can be complex and time-consuming, often involving manual setup and maintenance. Flake.GPT addresses these challenges by automating the creation of wrapper scripts, handling environment configurations, and utilizing AI to streamline processes. This project aims to replicate and extend the functionality of the Divnix Hive framework with enhanced flexibility and ease of use.  
 
-## Key Dependencies
+## Key Dependencies  
 
-### [divnix/hive](https://github.com/divnix/hive)
-- **Description**: Hive is a framework for Nix that provides a structured way to manage NixOS configurations and deployments.
-- **Usage**: Flake.GPT replicates the functionality of Hive, offering a familiar framework enhanced with AI-driven capabilities.
+### [divnix/hive](https://github.com/divnix/hive)  
+- **Description**: Hive is a framework for Nix that provides a structured way to manage NixOS configurations and deployments.  
+- **Usage**: Flake.GPT replicates the functionality of Hive, offering a familiar framework enhanced with AI-driven capabilities.  
 
-### [Wrapper-Manager](https://github.com/viperML/wrapper-manager)
-- **Description**: A Nix library that simplifies the configuration of applications by creating wrapper scripts without modifying files in the home directory.
-- **Usage**: Utilized to create and manage wrapper scripts, ensuring that all necessary environment variables and dependencies are set correctly, reducing manual configuration efforts.
+### [Wrapper-Manager](https://github.com/viperML/wrapper-manager)  
+- **Description**: A Nix library that simplifies the configuration of applications by creating wrapper scripts without modifying files in the home directory.  
+- **Usage**: Utilized to create and manage wrapper scripts, ensuring that all necessary environment variables and dependencies are set correctly, reducing manual configuration efforts.  
 
-### [Wrappix](https://github.com/zackattackz/wrappix)
-- **Description**: Extends Nix functionality using a modular system to create extensible wrapper scripts for various applications.
-- **Usage**: Enhances Nix's capabilities by allowing custom configurations and managing dependencies efficiently through a modular approach.
+### [Wrappix](https://github.com/zackattackz/wrappix)  
+- **Description**: Extends Nix functionality using a modular system to create extensible wrapper scripts for various applications.  
+- **Usage**: Enhances Nix's capabilities by allowing custom configurations and managing dependencies efficiently through a modular approach.  
 
-### [GPTscript-ai](https://github.com/gptscript-ai/gptscript)
-- **Description**: Replaces traditional `.nix` files with `.gpt` files, allowing Nix code logic to be expressed as natural language prompts.
-- **Usage**: Simplifies the management of Nix projects by enabling natural language prompts to replicate and automate Nix code logic.
+### [GPTscript-ai](https://github.com/gptscript-ai/gptscript)  
+- **Description**: Replaces traditional `.nix` files with `.gpt` files, allowing Nix code logic to be expressed as natural language prompts.  
+- **Usage**: Simplifies the management of Nix projects by enabling natural language prompts to replicate and automate Nix code logic.  
 
-### [Guidance](https://github.com/guidance-ai/guidance)
-- **Description**: Provides high-level structured outputs using large language models (LLMs).
-- **Usage**: Ensures the generation of coherent and structured outputs, facilitating better management and understanding of Nix configurations.
+### [Guidance](https://github.com/guidance-ai/guidance)  
+- **Description**: Provides high-level structured outputs using large language models (LLMs).  
+- **Usage**: Ensures the generation of coherent and structured outputs, facilitating better management and understanding of Nix configurations.  
 
-### [AICI](https://www.microsoft.com/en-us/research/project/aici/)
-- **Description**: Offers granular control over LLM outputs, including tokenization and fine-grained adjustments.
-- **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.
+### [AICI](https://www.microsoft.com/en-us/research/project/aici/)  
+- **Description**: Offers granular control over LLM outputs, including tokenization and fine-grained adjustments.  
+- **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.  
 
 ## Project Structure  
 
-```tree  
-Flake.GPT/
+```shell
+
+Flake.GPT
 ├── flake.nix                # Nix flake configuration file
 ├── scripts/
 │   ├── init_env.py          # Initializes the Nix environment
@@ -45,7 +46,8 @@ Flake.GPT/
 │   ├── example_config.nix   # Example Nix configuration
 │   └── custom_wrappers.nix  # Custom wrapper definitions
 ├── README.md                # Project documentation
-└── .gitignore               # Git ignore file
+└── .gitignore               # Git ignore file  
+
 ```  
 
 ### Example Usage  
@@ -86,7 +88,7 @@ Flake.GPT/
        };
      }];
    })
-  ```
+  ```  
 
 ## Getting Started  
 
