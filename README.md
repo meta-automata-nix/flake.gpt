@@ -33,6 +33,7 @@ Managing Nix projects and configurations can be complex and time-consuming, ofte
 - **Usage**: Allows precise control over the AI's outputs, ensuring accurate and reliable generation of configuration scripts and other outputs.
 
 ## Project Structure
+`````
 ```tree
 Flake.GPT/
 ├── flake.nix                # Nix flake configuration file
@@ -86,7 +87,7 @@ Flake.GPT/
      }];
    })
   ```
-
+`````
 ## Getting Started  
 
 1. **Clone the Repository**:  
