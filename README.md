@@ -53,15 +53,15 @@ Flake.GPT
 ### Example Usage  
 
 1. **Initialize Nix Environment**:  
-   ```nix  
+```nix  
    import gptscript  
 
    def init_nix_env(project_path):
        gptscript.run("nix-shell", cwd=project_path)
-   ```
+```
 
 2. **Traverse and Wrap Files**:
-   ```go-lang
+```go-lang
    import gptscript
    import os
 
@@ -74,10 +74,10 @@ Flake.GPT
    def wrap_file(file_path):
        # Example wrapping logic
        gptscript.run(f"echo 'Wrapping {file_path}'")
-   ```
+```
 
 3. **Integrate with Wrapper-Manager**:
-   ```mix
+```mix
    (wrapper-manager.lib.build {
      inherit pkgs;
      modules = [{
@@ -88,7 +88,7 @@ Flake.GPT
        };
      }];
    })
-  ```  
+```  
 
 ## Getting Started  
 
